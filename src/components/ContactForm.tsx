@@ -63,7 +63,7 @@ export default function ContactForm() {
     
     try {
       // Replace with your Google Forms submission URL
-      const GOOGLE_FORM_URL = 'https://forms.gle/2ycWAduMpofEtjvAA';
+      const GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSeA6rCrFzHplakqv1GGMh1P8C3jXz587vseJaE-jPTzHO5WQQ/viewform?usp=sf_link';
       
       const formData = new FormData();
       // Map form fields to Google Form field entries
