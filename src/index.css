@@ -12,6 +12,21 @@
   ::selection {
     @apply bg-purple-500/30 text-white;
   }
+
+  /* Hide default cursor */
+  * {
+    cursor: none !important;
+  }
+
+  /* Show default cursor for touch devices */
+  @media (hover: none) and (pointer: coarse) {
+    * {
+      cursor: auto !important;
+    }
+    .custom-cursor {
+      display: none !important;
+    }
+  }
 }
 
 @layer utilities {

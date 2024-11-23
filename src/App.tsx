@@ -5,10 +5,12 @@ import StatsGrid from './components/StatsGrid';
 import ServiceMarquee from './components/ServiceMarquee';
 import PricingSection from './components/PricingSection';
 import Footer from './components/Footer';
+import CustomCursor from './components/CustomCursor';
 
 const App = () => {
   return (
-    <div className="min-h-screen bg-[#0a0a0a] text-white overflow-hidden">
+    <div className="min-h-screen bg-[#0a0a0a] text-white overflow-hidden cursor-none">
+      <CustomCursor />
       <div className="fixed inset-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] pointer-events-none"></div>
       
       <Navbar />
@@ -30,7 +32,7 @@ const App = () => {
             </h1>
             
             <p className="text-gray-400 text-base sm:text-lg max-w-2xl mx-auto px-4 leading-relaxed">
-              At Brewed Media, we believe in the perfect blend of creativity and strategy, crafting your brand's success with                   precision and passion.
+              At Brewed Media, we believe in the perfect blend of creativity and strategy, crafting your brand's success with precision and passion.
             </p>
             
             <button className="group relative inline-flex items-center gap-2 bg-gradient-to-r from-purple-600 to-pink-600 text-white px-8 py-4 rounded-full overflow-hidden transition-all duration-500 hover:scale-105 hover:shadow-[0_0_40px_rgba(168,85,247,0.4)] active:scale-95 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 focus:ring-offset-black touch-manipulation">
