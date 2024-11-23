@@ -8,8 +8,15 @@ import ComparisonSection from './components/ComparisonSection';
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
 import CustomCursor from './components/CustomCursor';
+import Works from './pages/Works';
 
 const App = () => {
+  const path = window.location.pathname;
+
+  if (path === '/works') {
+    return <Works />;
+  }
+
   return (
     <div className="min-h-screen bg-[#0a0a0a] text-white overflow-hidden cursor-none">
       <div className="fixed inset-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] pointer-events-none"></div>
@@ -23,7 +30,7 @@ const App = () => {
           <div className="text-center space-y-6 sm:space-y-8">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-black/30 backdrop-blur-sm border border-white/10 animate-float">
               <Hand className="w-5 h-5 text-yellow-500 animate-wave" />
-              <span className="text-gray-400 text-sm sm:text-base">Brewed Agency Welcomes You!</span>
+              <span className="text-gray-400 text-sm sm:text-base">Brewed Agency Welcome's You!</span>
             </div>
             
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.1] tracking-tight px-4">
@@ -37,11 +44,14 @@ const App = () => {
               At Brewed Media, we believe in the perfect blend of creativity and strategy, crafting your brand's success with precision and passion.
             </p>
             
-            <button className="group relative inline-flex items-center gap-2 bg-gradient-to-r from-purple-600 to-pink-600 text-white px-8 py-4 rounded-full overflow-hidden transition-all duration-500 hover:scale-105 hover:shadow-[0_0_40px_rgba(168,85,247,0.4)] active:scale-95 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 focus:ring-offset-black touch-manipulation">
+            <a
+              href="#contact"
+              className="group relative inline-flex items-center gap-2 bg-gradient-to-r from-purple-600 to-pink-600 text-white px-8 py-4 rounded-full overflow-hidden transition-all duration-500 hover:scale-105 hover:shadow-[0_0_40px_rgba(168,85,247,0.4)] active:scale-95 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 focus:ring-offset-black touch-manipulation"
+            >
               <span className="relative z-10 font-medium text-base sm:text-lg whitespace-nowrap">Let's Work Together</span>
               <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6 transition-transform duration-500 group-hover:translate-x-1" />
               <div className="absolute inset-0 bg-gradient-to-r from-pink-600 to-purple-600 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-            </button>
+            </a>
           </div>
 
           <div className="mt-16 sm:mt-20">

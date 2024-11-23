@@ -25,7 +25,7 @@ const contactInfo = [
 
 export default function ContactSection() {
   return (
-    <section className="relative py-20 sm:py-32 overflow-hidden">
+    <section id="contact" className="relative py-20 sm:py-32 overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0 opacity-30">
         <div className="absolute -left-1/4 -top-1/4 w-1/2 h-1/2 bg-gradient-to-r from-purple-500/20 to-transparent rounded-full blur-3xl" />

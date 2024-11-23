@@ -1,17 +1,16 @@
 import React, { useState, useEffect } from 'react';
-import { Home, User, Briefcase, BookOpen, Zap, Menu, X } from 'lucide-react';
+import { Home, Briefcase, Zap, Menu, X } from 'lucide-react';
 import Logo from './Logo';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const currentPath = window.location.pathname;
   
   const menuItems = [
-    { name: 'Home', icon: Home },
-    { name: 'About', icon: User },
-    { name: 'Works', icon: Briefcase },
-    { name: 'Blogs', icon: BookOpen },
-    { name: 'Contact', icon: Zap },
+    { name: 'Home', icon: Home, href: '/' },
+    { name: 'Works', icon: Briefcase, href: '/works' },
+    { name: 'Contact', icon: Zap, href: '/#contact' },
   ];
 
   useEffect(() => {
@@ -23,6 +22,11 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const isActive = (href: string) => {
+    if (href === '/') return currentPath === '/';
+    return currentPath.startsWith(href);
+  };
+
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'py-2' : 'py-4'}`}>
       <nav className={`relative mx-auto px-4 transition-all duration-300 ${isScrolled ? 'max-w-3xl' : 'max-w-5xl'}`}>
@@ -30,18 +34,18 @@ export default function Navbar() {
           isScrolled ? 'bg-black/80' : 'bg-black/20'
         } backdrop-blur-md`}>
           {/* Logo */}
-          <a href="#" className="flex items-center transition-transform duration-300 hover:scale-105">
+          <a href="/" className="flex items-center transition-transform duration-300 hover:scale-105">
             <Logo />
           </a>
 
           {/* Desktop Menu */}
           <ul className="hidden md:flex items-center gap-1">
-            {menuItems.map((item, index) => (
+            {menuItems.map((item) => (
               <li key={item.name}>
                 <a
-                  href={`#${item.name.toLowerCase()}`}
+                  href={item.href}
                   className={`flex items-center gap-2 px-3 py-1.5 rounded-full text-sm transition-all duration-300
-                    ${index === 0 
+                    ${isActive(item.href)
                       ? 'bg-white text-black' 
                       : 'text-gray-400 hover:text-white hover:bg-white/10'
                     }`}
@@ -71,8 +75,12 @@ export default function Navbar() {
             {menuItems.map((item) => (
               <a
                 key={item.name}
-                href={`#${item.name.toLowerCase()}`}
-                className="flex items-center gap-3 px-4 py-3 text-gray-400 hover:text-white hover:bg-white/10 rounded-xl transition-colors"
+                href={item.href}
+                className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-colors ${
+                  isActive(item.href)
+                    ? 'text-white bg-white/10'
+                    : 'text-gray-400 hover:text-white hover:bg-white/10'
+                }`}
                 onClick={() => setIsOpen(false)}
               >
                 <item.icon className="w-5 h-5" />
