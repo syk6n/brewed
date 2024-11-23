@@ -60,39 +60,50 @@ export default function ContactForm() {
     if (!validateForm()) return;
     
     setIsSubmitting(true);
+
+    // Replace this with your actual Google Form URL
+    const GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSeA6rCrFzHplakqv1GGMh1P8C3jXz587vseJaE-jPTzHO5WQQ/formResponse';
     
-    try {
-      // Replace with your Google Forms submission URL
-      const GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSeA6rCrFzHplakqv1GGMh1P8C3jXz587vseJaE-jPTzHO5WQQ/viewform?usp=sf_link';
-      
-      const formData = new FormData();
-      // Map form fields to Google Form field entries
-      // Update these entry.X values with your Google Form field IDs
-      formData.append('entry.2005620554', formState.name);
-      formData.append('entry.1045781291', formState.email);
-      formData.append('entry.1065046570', formState.phone);
-      formData.append('entry.1166974658', formState.service);
-      formData.append('entry.839337160', formState.message);
-      
-      await fetch(GOOGLE_FORM_URL, {
-        method: 'POST',
-        body: formData,
-        mode: 'no-cors'
-      });
-      
-      setIsSubmitted(true);
-      setFormState({
-        name: '',
-        email: '',
-        phone: '',
-        service: '',
-        message: ''
-      });
-    } catch (error) {
-      console.error('Form submission error:', error);
-    } finally {
-      setIsSubmitting(false);
-    }
+    // Create a hidden form and submit it
+    const form = document.createElement('form');
+    form.method = 'POST';
+    form.action = GOOGLE_FORM_URL;
+    form.target = '_blank';
+    form.style.display = 'none';
+
+    // Add form fields - Update these with your actual Google Form field names
+    const formFields = {
+      'entry.2005620554': formState.name,
+      'entry.1045781291': formState.email,
+      'entry.1065046570': formState.phone,
+      'entry.1166974658': formState.service,
+      'entry.839337160': formState.message
+    };
+
+    // Create and append input fields
+    Object.entries(formFields).forEach(([name, value]) => {
+      const input = document.createElement('input');
+      input.type = 'hidden';
+      input.name = name;
+      input.value = value;
+      form.appendChild(input);
+    });
+
+    // Append form to body, submit it, and remove it
+    document.body.appendChild(form);
+    form.submit();
+    document.body.removeChild(form);
+
+    // Reset form and show success message
+    setIsSubmitted(true);
+    setFormState({
+      name: '',
+      email: '',
+      phone: '',
+      service: '',
+      message: ''
+    });
+    setIsSubmitting(false);
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
