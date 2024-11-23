@@ -60,7 +60,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-12 pt-8 border-t border-white/10 text-center text-sm text-gray-400">
-          <p>© {new Date().getFullYear()} Brewed. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Brewed. All rights reserved. Made by Sayan.</p>
         </div>
       </div>
     </footer>

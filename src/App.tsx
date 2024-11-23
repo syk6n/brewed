@@ -23,7 +23,7 @@ const App = () => {
           <div className="text-center space-y-6 sm:space-y-8">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-black/30 backdrop-blur-sm border border-white/10 animate-float">
               <Hand className="w-5 h-5 text-yellow-500 animate-wave" />
-              <span className="text-gray-400 text-sm sm:text-base">Brewed Agency Welcome's You!</span>
+              <span className="text-gray-400 text-sm sm:text-base">Brewed Agency Welcomes You!</span>
             </div>
             
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.1] tracking-tight px-4">
