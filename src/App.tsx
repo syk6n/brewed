@@ -4,15 +4,16 @@ import Navbar from './components/Navbar';
 import StatsGrid from './components/StatsGrid';
 import ServiceMarquee from './components/ServiceMarquee';
 import PricingSection from './components/PricingSection';
+import ComparisonSection from './components/ComparisonSection';
 import Footer from './components/Footer';
 import CustomCursor from './components/CustomCursor';
 
 const App = () => {
   return (
     <div className="min-h-screen bg-[#0a0a0a] text-white overflow-hidden cursor-none">
-      <CustomCursor />
       <div className="fixed inset-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] pointer-events-none"></div>
       
+      <CustomCursor />
       <Navbar />
 
       {/* Hero Section */}
@@ -53,6 +54,9 @@ const App = () => {
 
       {/* Pricing Section */}
       <PricingSection />
+
+      {/* Comparison Section */}
+      <ComparisonSection />
 
       {/* Footer */}
       <Footer />
