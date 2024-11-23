@@ -10,7 +10,8 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: './index.html',
-        works: './works/index.html'
+        works: './works/index.html',
+        cryptoverse: './projects/cryptoverse/index.html'
       }
     }
   }

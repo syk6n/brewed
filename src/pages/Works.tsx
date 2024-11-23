@@ -6,11 +6,11 @@ import CustomCursor from '../components/CustomCursor';
 
 const projects = [
   {
-    title: 'E-Commerce Platform',
-    description: 'A modern e-commerce platform built with React and Node.js, featuring real-time inventory management and secure payment processing.',
-    image: 'https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&q=80&w=1600',
-    tags: ['React', 'Node.js', 'MongoDB', 'Stripe'],
-    liveUrl: '#',
+    title: 'CryptoVerse Web3',
+    description: 'A decentralized platform empowering users with secure, transparent crypto solutions. Seamlessly explore DeFi, NFTs, and blockchain technology with ultimate control over your digital assets.',
+    image: 'https://cdn.dribbble.com/userupload/16429289/file/original-d4cab2b8e55cff9f4973e0a630dfc4cb.png?resize=752x&vertical=center',
+    tags: ['React', 'Web3.js', 'Solidity', 'TailwindCSS'],
+    liveUrl: '/projects/cryptoverse/',
     githubUrl: '#'
   },
   {
@@ -103,7 +103,7 @@ export default function Works() {
                       className="flex items-center gap-2 text-purple-400 hover:text-purple-300 transition-colors"
                     >
                       <ExternalLink className="w-4 h-4" />
-                      <span>Live Demo</span>
+                      <span>View Project</span>
                     </a>
                     <a
                       href={project.githubUrl}
