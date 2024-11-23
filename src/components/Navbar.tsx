@@ -5,11 +5,10 @@ import Logo from './Logo';
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const currentPath = window.location.pathname;
   
   const menuItems = [
     { name: 'Home', icon: Home, href: '/' },
-    { name: 'Works', icon: Briefcase, href: '/works' },
+    { name: 'Works', icon: Briefcase, href: '/works/' },
     { name: 'Contact', icon: Zap, href: '/#contact' },
   ];
 
@@ -23,8 +22,8 @@ export default function Navbar() {
   }, []);
 
   const isActive = (href: string) => {
-    if (href === '/') return currentPath === '/';
-    return currentPath.startsWith(href);
+    if (href === '/') return window.location.pathname === '/';
+    return window.location.pathname.startsWith(href);
   };
 
   return (

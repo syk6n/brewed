@@ -8,15 +8,8 @@ import ComparisonSection from './components/ComparisonSection';
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
 import CustomCursor from './components/CustomCursor';
-import Works from './pages/Works';
 
 const App = () => {
-  const path = window.location.pathname;
-
-  if (path === '/works') {
-    return <Works />;
-  }
-
   return (
     <div className="min-h-screen bg-[#0a0a0a] text-white overflow-hidden cursor-none">
       <div className="fixed inset-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] pointer-events-none"></div>
