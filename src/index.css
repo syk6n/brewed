@@ -13,18 +13,10 @@
     @apply bg-purple-500/30 text-white;
   }
 
-  /* Hide default cursor */
-  * {
-    cursor: none !important;
-  }
-
-  /* Show default cursor for touch devices */
-  @media (hover: none) and (pointer: coarse) {
+  /* Hide default cursor only on non-touch devices */
+  @media (hover: hover) and (pointer: fine) {
     * {
-      cursor: auto !important;
-    }
-    .custom-cursor {
-      display: none !important;
+      cursor: none !important;
     }
   }
 }

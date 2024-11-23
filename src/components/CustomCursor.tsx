@@ -5,6 +5,11 @@ export default function CustomCursor() {
   const cursorDotRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    // Check if it's a touch device
+    if ('ontouchstart' in window) {
+      return;
+    }
+
     const cursor = cursorRef.current;
     const cursorDot = cursorDotRef.current;
     
@@ -44,6 +49,11 @@ export default function CustomCursor() {
     window.addEventListener('mousemove', onMouseMove);
     return () => window.removeEventListener('mousemove', onMouseMove);
   }, []);
+
+  // Don't render on touch devices
+  if ('ontouchstart' in window) {
+    return null;
+  }
 
   return (
     <>
