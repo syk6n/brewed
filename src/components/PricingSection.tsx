@@ -145,13 +145,18 @@ const PricingCard = ({ tier }: PricingCardProps) => (
       ))}
     </ul>
 
-    <button className="group relative w-full px-6 py-3 text-base font-medium rounded-full bg-gradient-to-r from-purple-600 to-pink-600 text-white transition-all duration-300 hover:shadow-[0_0_20px_rgba(168,85,247,0.4)] focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 focus:ring-offset-black">
+    <a
+      href="https://calendly.com/sayankunduatwork/30min"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="group relative w-full px-6 py-3 text-base font-medium rounded-full bg-gradient-to-r from-purple-600 to-pink-600 text-white transition-all duration-300 hover:shadow-[0_0_20px_rgba(168,85,247,0.4)] focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 focus:ring-offset-black"
+    >
       <span className="relative z-10 flex items-center justify-center gap-2">
         Get Started
         <Zap className="w-4 h-4 transition-transform duration-300 group-hover:rotate-12" />
       </span>
       <div className="absolute inset-0 rounded-full bg-gradient-to-r from-pink-600 to-purple-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-    </button>
+    </a>
   </div>
 );
 

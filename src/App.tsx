@@ -39,7 +39,9 @@ const App = () => {
             </p>
             
             <a
-              href="#contact"
+              href="https://calendly.com/sayankunduatwork/30min"
+              target="_blank"
+              rel="noopener noreferrer"
               className="group relative inline-flex items-center gap-2 bg-gradient-to-r from-purple-600 to-pink-600 text-white px-8 py-4 rounded-full overflow-hidden transition-all duration-500 hover:scale-105 hover:shadow-[0_0_40px_rgba(168,85,247,0.4)] active:scale-95 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 focus:ring-offset-black touch-manipulation"
             >
               <span className="relative z-10 font-medium text-base sm:text-lg whitespace-nowrap">Let's Work Together</span>
