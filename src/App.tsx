@@ -5,6 +5,7 @@ import StatsGrid from './components/StatsGrid';
 import ServiceMarquee from './components/ServiceMarquee';
 import PricingSection from './components/PricingSection';
 import ComparisonSection from './components/ComparisonSection';
+import TestimonialsSection from './components/TestimonialsSection';
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
 import CustomCursor from './components/CustomCursor';
@@ -55,6 +56,9 @@ const App = () => {
 
       {/* Stats Section */}
       <StatsGrid />
+
+      {/* Testimonials Section */}
+      <TestimonialsSection />
 
       {/* Pricing Section */}
       <PricingSection />
