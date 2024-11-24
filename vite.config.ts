@@ -11,7 +11,6 @@ export default defineConfig({
       input: {
         main: './index.html',
         works: './works/index.html',
-        pricing: './pricing/index.html',
         cryptoverse: './projects/cryptoverse/index.html'
       }
     }
