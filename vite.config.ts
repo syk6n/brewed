@@ -11,7 +11,8 @@ export default defineConfig({
       input: {
         main: './index.html',
         works: './works/index.html',
-        cryptoverse: './projects/cryptoverse/index.html'
+        cryptoverse: './projects/cryptoverse/index.html',
+        artistry: './projects/artistry/index.html'
       }
     }
   }

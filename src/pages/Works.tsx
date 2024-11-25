@@ -14,6 +14,14 @@ const projects = [
     githubUrl: '#'
   },
   {
+    title: 'Artistry',
+    description: 'An innovative digital art platform that connects artists and collectors through immersive experiences. Discover unique artworks and engage with a vibrant creative community.',
+    image: 'https://mir-s3-cdn-cf.behance.net/project_modules/fs/7445cf211296157.67208dd63f0a9.png',
+    tags: ['React', 'Three.js', 'GSAP', 'TailwindCSS'],
+    liveUrl: '/projects/artistry/',
+    githubUrl: '#'
+  },
+  {
     title: 'Healthcare Dashboard',
     description: 'An intuitive healthcare analytics dashboard providing real-time patient data visualization and predictive analytics.',
     image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=1600',
@@ -26,14 +34,6 @@ const projects = [
     description: 'A feature-rich social media application with real-time messaging, post sharing, and user engagement analytics.',
     image: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&q=80&w=1600',
     tags: ['React Native', 'Firebase', 'Redux', 'WebSocket'],
-    liveUrl: '#',
-    githubUrl: '#'
-  },
-  {
-    title: 'AI Content Generator',
-    description: 'An AI-powered content generation platform that creates high-quality, SEO-optimized content for various industries.',
-    image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=1600',
-    tags: ['Next.js', 'OpenAI', 'TailwindCSS', 'PostgreSQL'],
     liveUrl: '#',
     githubUrl: '#'
   }
@@ -89,7 +89,7 @@ export default function Works() {
                     {project.tags.map((tag, tagIndex) => (
                       <span
                         key={tagIndex}
-                        className="px-3 py-1 text-sm rounded-full bg-white/5 border border-white/10"
+                        className="px-3 py-1 text-sm rounded-full bg-white/5 border border-white/10 inline-block"
                       >
                         {tag}
                       </span>
