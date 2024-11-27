@@ -22,11 +22,11 @@ const projects = [
     githubUrl: '#'
   },
   {
-    title: 'Healthcare Dashboard',
-    description: 'An intuitive healthcare analytics dashboard providing real-time patient data visualization and predictive analytics.',
-    image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=1600',
-    tags: ['Vue.js', 'Python', 'D3.js', 'AWS'],
-    liveUrl: '#',
+    title: 'Wanderlust Travel',
+    description: 'A modern travel landing page showcasing breathtaking destinations and curated travel experiences. Features immersive visuals and seamless booking integration.',
+    image: 'https://mir-s3-cdn-cf.behance.net/project_modules/max_3840/aaed3f210891927.67191488c6720.png',
+    tags: ['React', 'Framer Motion', 'TailwindCSS', 'Next.js'],
+    liveUrl: '/projects/wanderlust/',
     githubUrl: '#'
   },
   {

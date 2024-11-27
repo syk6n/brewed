@@ -12,7 +12,8 @@ export default defineConfig({
         main: './index.html',
         works: './works/index.html',
         cryptoverse: './projects/cryptoverse/index.html',
-        artistry: './projects/artistry/index.html'
+        artistry: './projects/artistry/index.html',
+        wanderlust: './projects/wanderlust/index.html'
       }
     }
   }
