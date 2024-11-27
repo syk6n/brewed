@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowLeft, ExternalLink, Github } from 'lucide-react';
+import { ArrowLeft, ExternalLink } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import CustomCursor from '../components/CustomCursor';
@@ -80,13 +80,6 @@ export default function Wanderlust() {
                   >
                     <ExternalLink className="w-5 h-5" />
                     <span>Live Demo</span>
-                  </a>
-                  <a
-                    href="#"
-                    className="flex items-center gap-2 text-purple-400 hover:text-purple-300 transition-colors"
-                  >
-                    <Github className="w-5 h-5" />
-                    <span>Source Code</span>
                   </a>
                 </div>
               </section>

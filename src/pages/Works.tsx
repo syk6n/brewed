@@ -1,5 +1,5 @@
 import React from 'react';
-import { ExternalLink, Github } from 'lucide-react';
+import { ExternalLink } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import CustomCursor from '../components/CustomCursor';
@@ -11,7 +11,6 @@ const projects = [
     image: 'https://cdn.dribbble.com/userupload/16429289/file/original-d4cab2b8e55cff9f4973e0a630dfc4cb.png?resize=752x&vertical=center',
     tags: ['React', 'Web3.js', 'Solidity', 'TailwindCSS'],
     liveUrl: '/projects/cryptoverse/',
-    githubUrl: '#'
   },
   {
     title: 'Artistry',
@@ -19,7 +18,6 @@ const projects = [
     image: 'https://mir-s3-cdn-cf.behance.net/project_modules/fs/7445cf211296157.67208dd63f0a9.png',
     tags: ['React', 'Three.js', 'GSAP', 'TailwindCSS'],
     liveUrl: '/projects/artistry/',
-    githubUrl: '#'
   },
   {
     title: 'Wanderlust Travel',
@@ -27,7 +25,6 @@ const projects = [
     image: 'https://mir-s3-cdn-cf.behance.net/project_modules/max_3840/aaed3f210891927.67191488c6720.png',
     tags: ['React', 'Framer Motion', 'TailwindCSS', 'Next.js'],
     liveUrl: '/projects/wanderlust/',
-    githubUrl: '#'
   },
   {
     title: 'Social Media App',
@@ -35,7 +32,6 @@ const projects = [
     image: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&q=80&w=1600',
     tags: ['React Native', 'Firebase', 'Redux', 'WebSocket'],
     liveUrl: '#',
-    githubUrl: '#'
   }
 ];
 
@@ -104,13 +100,6 @@ export default function Works() {
                     >
                       <ExternalLink className="w-4 h-4" />
                       <span>View Project</span>
-                    </a>
-                    <a
-                      href={project.githubUrl}
-                      className="flex items-center gap-2 text-purple-400 hover:text-purple-300 transition-colors"
-                    >
-                      <Github className="w-4 h-4" />
-                      <span>Source Code</span>
                     </a>
                   </div>
                 </div>
