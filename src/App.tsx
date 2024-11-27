@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Hand, ArrowRight } from 'lucide-react';
 import Navbar from './components/Navbar';
 import StatsGrid from './components/StatsGrid';
@@ -9,12 +9,10 @@ import TestimonialsSection from './components/TestimonialsSection';
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
 import CustomCursor from './components/CustomCursor';
-import { checkAndScrollToTarget } from './utils/navigation';
+import { useScrollOnMount } from './utils/navigation';
 
 const App = () => {
-  useEffect(() => {
-    checkAndScrollToTarget();
-  }, []);
+  useScrollOnMount();
 
   return (
     <div className="min-h-screen bg-[#0a0a0a] text-white overflow-hidden cursor-none">

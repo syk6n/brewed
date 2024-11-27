@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Home, Briefcase, Zap, Menu, X } from 'lucide-react';
 import Logo from './Logo';
+import { handleContactClick } from '../utils/navigation';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,7 +10,7 @@ export default function Navbar() {
   const menuItems = [
     { name: 'Home', icon: Home, href: '/' },
     { name: 'Works', icon: Briefcase, href: '/works/' },
-    { name: 'Contact', icon: Zap, href: '/#contact' },
+    { name: 'Contact', icon: Zap, href: '/#contact', onClick: handleContactClick },
   ];
 
   useEffect(() => {
@@ -43,6 +44,7 @@ export default function Navbar() {
               <li key={item.name}>
                 <a
                   href={item.href}
+                  onClick={item.onClick}
                   className={`flex items-center gap-2 px-3 py-1.5 rounded-full text-sm transition-all duration-300
                     ${isActive(item.href)
                       ? 'bg-white text-black' 
@@ -75,12 +77,15 @@ export default function Navbar() {
               <a
                 key={item.name}
                 href={item.href}
+                onClick={(e) => {
+                  if (item.onClick) item.onClick(e);
+                  setIsOpen(false);
+                }}
                 className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-colors ${
                   isActive(item.href)
                     ? 'text-white bg-white/10'
                     : 'text-gray-400 hover:text-white hover:bg-white/10'
                 }`}
-                onClick={() => setIsOpen(false)}
               >
                 <item.icon className="w-5 h-5" />
                 <span className="font-medium">{item.name}</span>
