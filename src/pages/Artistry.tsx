@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowLeft, ExternalLink } from 'lucide-react';
+import { ArrowLeft } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import CustomCursor from '../components/CustomCursor';
@@ -69,20 +69,7 @@ export default function Artistry() {
               </section>
             </div>
 
-            <div className="space-y-8">
-              <section>
-                <h2 className="text-2xl font-bold mb-4">Project Links</h2>
-                <div className="space-y-4">
-                  <a
-                    href="#"
-                    className="flex items-center gap-2 text-purple-400 hover:text-purple-300 transition-colors"
-                  >
-                    <ExternalLink className="w-5 h-5" />
-                    <span>Live Demo</span>
-                  </a>
-                </div>
-              </section>
-
+            <div>
               <section>
                 <h2 className="text-2xl font-bold mb-4">Timeline</h2>
                 <p className="text-gray-400">
