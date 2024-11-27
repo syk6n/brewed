@@ -13,7 +13,8 @@ export default defineConfig({
         works: './works/index.html',
         cryptoverse: './projects/cryptoverse/index.html',
         artistry: './projects/artistry/index.html',
-        wanderlust: './projects/wanderlust/index.html'
+        wanderlust: './projects/wanderlust/index.html',
+        memecoin: './projects/memecoin/index.html'
       }
     }
   }

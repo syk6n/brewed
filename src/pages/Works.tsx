@@ -27,11 +27,11 @@ const projects = [
     liveUrl: '/projects/wanderlust/',
   },
   {
-    title: 'Social Media App',
-    description: 'A feature-rich social media application with real-time messaging, post sharing, and user engagement analytics.',
-    image: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&q=80&w=1600',
-    tags: ['React Native', 'Firebase', 'Redux', 'WebSocket'],
-    liveUrl: '#',
+    title: 'DogeMoon Token',
+    description: 'A vibrant and engaging landing page for a community-driven meme token, featuring interactive tokenomics visualization, real-time statistics, and seamless Web3 integration.',
+    image: 'https://mir-cdn.behance.net/v1/rendition/project_modules/max_3840_webp/d659de210236081.670e04c82d16a.png',
+    tags: ['React', 'Web3.js', 'TailwindCSS', 'Framer Motion'],
+    liveUrl: '/projects/memecoin/',
   }
 ];
 
