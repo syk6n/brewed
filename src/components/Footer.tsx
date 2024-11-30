@@ -5,7 +5,7 @@ const socialLinks = [
   { name: 'GitHub', icon: Github, url: '#' },
   { name: 'Twitter', icon: Twitter, url: '#' },
   { name: 'LinkedIn', icon: Linkedin, url: '#' },
-  { name: 'Email', icon: Mail, url: 'mailto:contact@brewed.design' },
+  { name: 'Email', icon: Mail, url: 'mailto:sayankunduatwork@gmail.com' },
 ];
 
 export default function Footer() {
@@ -36,9 +36,9 @@ export default function Footer() {
           <div className="space-y-4">
             <h4 className="text-sm font-semibold uppercase tracking-wider text-gray-400">Contact</h4>
             <ul className="space-y-2 text-gray-400">
-              <li>contact@brewed.design</li>
-              <li>+1 (555) 123-4567</li>
-              <li>123 Design Street, Creative City, DC 12345</li>
+              <li>sayankunduatwork@gmail.com</li>
+              <li>+91 8287156273</li>
+              <li>DLF IV - Gurgaon, India</li>
             </ul>
           </div>
 

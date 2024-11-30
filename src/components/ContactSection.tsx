@@ -6,19 +6,19 @@ const contactInfo = [
   {
     icon: Phone,
     label: 'Phone',
-    value: '+1 (555) 123-4567',
-    href: 'tel:+15551234567'
+    value: '+91 8287156273',
+    href: 'tel:+918287156273'
   },
   {
     icon: Mail,
     label: 'Email',
-    value: 'contact@brewed.design',
-    href: 'mailto:contact@brewed.design'
+    value: 'sayankunduatwork@gmail.com',
+    href: 'mailto:sayankunduatwork@gmail.com'
   },
   {
     icon: MapPin,
     label: 'Address',
-    value: '123 Design Street, Creative City, DC 12345',
+    value: 'DLF IV - Gurgaon, India',
     href: 'https://maps.google.com'
   }
 ];
