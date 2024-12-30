@@ -1,5 +1,5 @@
 import React from 'react';
-import { Award, Users, Briefcase, Clock } from 'lucide-react';
+import { Users, Briefcase, Clock, Zap } from 'lucide-react';
 
 const stats = [
   {
@@ -10,7 +10,7 @@ const stats = [
   },
   {
     label: 'Satisfied Clients',
-    value: '20+',
+    value: '70+',
     icon: Users,
     description: 'Happy clients worldwide',
   },
@@ -21,10 +21,10 @@ const stats = [
     description: 'Industry expertise',
   },
   {
-    label: 'Awards Won',
-    value: '14+',
-    icon: Award,
-    description: 'Industry recognition',
+    label: 'Quickest Turnaround',
+    value: '7 Days',
+    icon: Zap,
+    description: 'Fast project delivery',
   },
 ];
 
