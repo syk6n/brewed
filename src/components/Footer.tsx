@@ -1,10 +1,10 @@
 import React from 'react';
-import { Github, Twitter, Linkedin, Mail } from 'lucide-react';
+import { Github, Twitter, Linkedin, Mail, InstagramIcon, GlobeIcon } from 'lucide-react';
 
 const socialLinks = [
-  { name: 'GitHub', icon: Github, url: '#' },
-  { name: 'Twitter', icon: Twitter, url: '#' },
-  { name: 'LinkedIn', icon: Linkedin, url: '#' },
+  { name: 'Instagram', icon: InstagramIcon, url: 'https://www.instagram.com/syk6n/' },
+  { name: 'Website', icon: GlobeIcon, url: 'https://sayans.work/' },
+  { name: 'LinkedIn', icon: Linkedin, url: 'https://www.linkedin.com/in/sayan-kundu-14bba4272/' },
   { name: 'Email', icon: Mail, url: 'mailto:sayankunduatwork@gmail.com' },
 ];
 
