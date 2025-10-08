@@ -20,7 +20,7 @@ const testimonials = [
     name: 'Emily Watson',
     role: 'Marketing Director at Innovate',
     image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=150&h=150',
-    quote: 'Working with Brewed was a game-changer for our brand. They took our vision and elevated it beyond our expectations. The results speak for themselves.',
+    quote: 'Working with Brewed was actually a game-changer for our brand. They took our vision and elevated it beyond our expectations. The results speak for themselves.',
     rating: 5
   }
 ];
